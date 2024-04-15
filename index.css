@@ -75,12 +75,42 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
- 
+    background-color: rgb(34 34 34);
 }
 
 .header > *{
     padding:20px;
-
 }
 
+.cardcontainer{
+    margin:10px ;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
 
+.spotifyPlaylist{
+    padding: 16px;
+}
+
+ .card{
+    width: 200px;
+    padding:5px;
+    border-radius:5px ;
+    background-color:#252525 ;
+}
+
+.card > *{
+    padding-top: 10px;
+    /* border-radius: 50%; */
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.play{
+        display: block;
+        margin-bottom: 10px;    
+}
