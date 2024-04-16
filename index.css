@@ -51,17 +51,18 @@ body{
 }
 
 .your-library{
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .footer{
-    text-align:center;
-    bottom:0;
+    /* text-align:center; */
+    bottom: 0;
     /* display: flex; */
     font-size: 10px;
-    gap:5px;
+    /* gap:5px; */
     position: absolute;
-    bottom: 20px;
+    padding: 18px;
+
 }
 
 .footer a{
@@ -87,6 +88,8 @@ body{
     display: flex;
     gap:10px;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 75vh;
 }
 
 .spotifyPlaylist{
@@ -98,11 +101,16 @@ body{
     padding:5px;
     border-radius:5px ;
     background-color:#252525 ;
+    position: relative;
 }
 
 .card > *{
     padding-top: 10px;
-    /* border-radius: 50%; */
+    border-radius: 50%;
+}
+
+.card h2{
+    font-size: 20px;
 }
 
 .card img{
@@ -111,6 +119,11 @@ body{
 }
 
 .play{
-        display: block;
-        margin-bottom: 10px;    
+        /* display: block; */
+        /* margin-bottom: 10px;  */
+        position: absolute;
+        top: 165px;
+        right:0; 
+        opacity: 0;
+        transition:all 1s ease-out;  
 }
