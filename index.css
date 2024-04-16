@@ -62,11 +62,11 @@ body{
     /* gap:5px; */
     position: absolute;
     padding: 18px;
-
 }
 
 .footer a{
     color: gray;
+
 }
 
 .right{
@@ -168,8 +168,30 @@ body{
 .playbar{
     position: absolute;
     bottom: 0;
-    background-color: rgb(37, 52, 37);
-    width: 100%;
+    background-color: rgb(163, 193, 163);
+    width: 90%;
     padding: 12px;
+}
 
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap:16px;
+}
+
+.songlist ul{
+    padding: 0 42px;
+} 
+
+.songlist ul li{
+    list-style-type: decimal;
+    display: flex;
+    gap: 34px;
+    cursor: pointer;
+    padding:12px 0 ;
+}
+
+.playnow span{
+    font-size: 10px;
+    width: 64px;
 }
