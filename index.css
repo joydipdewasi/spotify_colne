@@ -70,13 +70,15 @@ body{
 }
 
 .right{
-    margin: 16px 0;;
+    margin: 16px 0;
+    position: relative;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
     background-color: rgb(34 34 34);
+    height: 76px;
 }
 
 .header > *{
@@ -126,4 +128,48 @@ body{
         right:0; 
         opacity: 0;
         transition:all 1s ease-out;  
+}
+
+.buttons > *{     /* ">" ata sin mana buttons ar vatora ja a6a sata tag kora */
+    margin:0 12px ;
+}
+
+.Signupbtn{
+    font-weight: bold;
+    background-color:rgb(34 34 34);
+    color:rgb(110, 108, 108);
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.Signupbtn:hover{
+    cursor: pointer;
+    font-size: 1.01rem;
+    color:white;
+
+}
+
+.Loginbtn{
+    background-color:white;
+    color:rgb(110, 108, 108);
+    border-radius: 50px;
+    padding: 10px;
+    width: 85px;
+    font-size: 16px;
+}
+
+.Loginbtn:hover{
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(37, 52, 37);
+    width: 100%;
+    padding: 12px;
+
 }
